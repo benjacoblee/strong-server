@@ -56,7 +56,7 @@ defmodule Workout do
 
     %WorkoutDetail{
       workout_number: workout_number,
-      date: date,
+      date: date |> String.split(" ") |> List.first(),
       workout_name: workout_name,
       exercise_name: exercise_name,
       set_order: set_order,

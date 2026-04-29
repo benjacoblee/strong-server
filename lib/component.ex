@@ -12,9 +12,9 @@ defmodule Component do
       <table class="table-auto text-xs">
         <thead>
           <tr>
-            <th class="text-left">Exercise Name</th>
-            <th class="text-center">Set #</th>
-            <th class="text-right">Detail</th>
+            <th class="text-left font-bold">Exercise Name</th>
+            <th class="text-center font-bold">Set #</th>
+            <th class="text-right font-bold">Detail</th>
           </tr>
         </thead>
         <tbody>
