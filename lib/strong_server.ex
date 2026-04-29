@@ -4,7 +4,7 @@ defmodule MyRouter do
   plug(:match)
   plug(:dispatch)
 
-  match _ do
+  match "/" do
     data =
       DataFetcher.fetch_data()
       |> CsvParser.parse()
