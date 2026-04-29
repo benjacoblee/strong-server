@@ -1,5 +1,5 @@
 defmodule DataFetcher do
-  @url "https://r2.bnjmn.me/strong.csv"
+  @url System.get_env("STRONG_HTML_URL") || "http://localhost:4000/"
 
   def fetch_data() do
     %{body: body} = Req.get!(@url, decode_body: false)

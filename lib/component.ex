@@ -5,11 +5,11 @@ defmodule Component do
   attr(:workouts, :array)
 
   ~H"""
-  <div class="bg-ctp-mantle flex h-full w-full flex-col rounded-sm px-4 py-4">
-    <div class="flex w-full flex-col gap-4">
-      <div class="font-bold text-2xl">Workout #{@workout_number}</div>
+  <div class="bg-ctp-mantle flex h-full w-full flex-col rounded-sm">
+    <div class="flex w-full flex-col gap-4 p-4">
+      <h1 class="font-bold text-2xl">Workout #{@workout_number}</h1>
       <div class="font-bold">{@date}</div>
-      <table class="table-auto">
+      <table class="table-auto text-xs">
         <thead>
           <tr>
             <th class="text-left">Exercise Name</th>

@@ -72,7 +72,7 @@ defmodule Workout do
           workout_number: workout_number
         }
         | _
-      ] = workout_list |> Enum.reject(&(&1.set_order == "Rest Timer"))
+      ] = workout_list |> Enum.reject(&(&1.set_order == "Rest Timer" || &1.set_order == "Note"))
 
     %{date: date, workout_number: workout_number, workouts: workouts}
   end
